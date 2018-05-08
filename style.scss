@@ -153,6 +153,20 @@ a {
   .letter-t {
     > .shape:nth-of-type(1) {
       .fill {
+        animation-delay: 2s * 2;
+      }
+    }
+
+    > .shape:nth-of-type(2) {
+      .fill {
+        animation-delay: 2.1s * 2;
+      }
+    }
+  }
+
+  .letter-f {
+    > .shape:nth-of-type(1) {
+      .fill {
         animation-delay: 2.1s * 2;
       }
     }
@@ -162,24 +176,10 @@ a {
         animation-delay: 2.2s * 2;
       }
     }
-  }
-
-  .letter-f {
-    > .shape:nth-of-type(1) {
-      .fill {
-        animation-delay: 2.25s * 2;
-      }
-    }
-
-    > .shape:nth-of-type(2) {
-      .fill {
-        animation-delay: 2.35s * 2;
-      }
-    }
 
     > .shape:nth-of-type(3) {
       .fill {
-        animation-delay: 2.45s * 2;
+        animation-delay: 2.3s * 2;
         animation-duration: ($segment-time--fast  * 2);
       }
     }
@@ -188,7 +188,7 @@ a {
   .letter-l {
     > .shape:nth-of-type(1) {
       .fill {
-        animation-delay: 2.5s * 2;
+        animation-delay: 2.25s * 2;
       }
     }
 
@@ -196,7 +196,7 @@ a {
       animation: letter-l-bottom (1.25s  * 2) $ease (1.75s  * 2) forwards;
 
       .fill {
-        animation-delay: 2.6s * 2;
+        animation-delay: 2.35s * 2;
         animation-duration: ($segment-time--fast * 2);
       }
     }
@@ -205,7 +205,7 @@ a {
   .letter-i {
     > .shape:nth-of-type(1) {
       .fill {
-        animation-delay: 2.7s * 2;;
+        animation-delay: 2.4s * 2;;
       }
     }
   }
@@ -213,13 +213,13 @@ a {
   .letter-x {
     > .shape:nth-of-type(1) {
       .fill {
-        animation-delay: 2.75s * 2;;
+        animation-delay: 2.45s * 2;;
       }
     }
 
     > .shape:nth-of-type(2) {
       .fill {
-        animation-delay: 2.85s * 2;;
+        animation-delay: 2.6s * 2;;
       }
     }
   }
@@ -397,7 +397,7 @@ a {
     z-index: 2;
 
     .fill {
-      animation-delay: 2.1s;
+      animation-delay: 2s;
     }
   }
 
@@ -409,7 +409,7 @@ a {
     z-index: 1;
 
     .fill {
-      animation-delay: 2.2s;
+      animation-delay: 2.1s;
     }
   }
 }
@@ -428,7 +428,7 @@ a {
 
     .fill {
       content: '';
-      animation-delay: 2.25s;
+      animation-delay: 2.1s;
       bottom: 0;
     }
   }
@@ -440,7 +440,7 @@ a {
 
     .fill {
       content: '';
-      animation-delay: 2.35s;
+      animation-delay: 2.2s;
       top: 0;
     }
   }
@@ -457,7 +457,7 @@ a {
     .fill {
       content: '';
       animation-name: fill-height-no-shadow;
-      animation-delay: 2.45s;
+      animation-delay: 2.3s;
       animation-duration: $segment-time--fast;
       bottom: 0;
     }
@@ -473,7 +473,7 @@ a {
 
     .fill {
       content: '';
-      animation-delay: 2.5s;
+      animation-delay: 2.25s;
       top: 0;
     }
   }
@@ -484,11 +484,11 @@ a {
     bottom: 0;
     top: auto;
     transform-origin: 0 100%;
-    transform: translate(0rem, -2rem) rotateZ(89deg);
+    transform: translate(0rem, -2rem) rotateZ(95deg);
     animation: letter-l-bottom 1.25s $ease 1.75s forwards;
 
     .fill {
-      animation-delay: 2.6s;
+      animation-delay: 2.35s;
       animation-duration: $segment-time--fast;
       bottom: 0;
     }
@@ -506,7 +506,7 @@ a {
 
     .fill {
       content: '';
-      animation-delay: 2.7s;
+      animation-delay: 2.4s;
       top: 0;
     }
   }
@@ -527,7 +527,7 @@ a {
     z-index: 2;
 
     .fill {
-      animation-delay: 2.75s;
+      animation-delay: 2.45s;
       bottom: 0;
     }
   }
@@ -540,7 +540,7 @@ a {
     z-index: 1;
 
     .fill {
-      animation-delay: 2.85s;
+      animation-delay: 2.6s;
     }
   }
 }
@@ -698,7 +698,7 @@ a {
 @keyframes letter-l-bottom {
   0%,
   40% {
-    transform: translate(0rem, -1.85rem) rotateZ(90deg);
+    transform: translate(0rem, -1.85rem) rotateZ(95deg);
   }
   100%{
     transform: translate(0rem, -2rem) rotateZ(93deg);

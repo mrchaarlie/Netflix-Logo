@@ -94,7 +94,7 @@ a {
     animation: slide-fade-in-left (3.1s * 2) $ease-cubic forwards;
   }
 
-  .shape .fill {
+  .letter .shape .fill {
     animation-duration: ($segment-time * 2);
     transform: none;
   }

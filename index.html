@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <meta property="og:title" content="Animated Netflix Logo in CSS" />
+    <meta property="og:type" content="CSS Experiment" />
+    <!-- <meta property="og:image" content="https://charleswu.ca/img/headshot_thumb_grey.jpg" /> -->
+    <meta property="og:description"
+     content="Animated Netflix Logo in HTML/CSS"/>
+
+    <meta name="author" content="Charlie Wu" />
+    <meta name="description" content="Animated Netflix Logo in CSS" />
+    <meta name="keywords" content="HTML, CSS, Animation, Experiment, Design"/>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Animated Netflix Logo in CSS</title>
+
+    <!-- LIVE RELOAD -->
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?<snipver></snipver>=1"></' + 'script>')</script>
+
+  </head>
+
+  <body id="home">
+    <div class="container" id="container">
+
+      <div class="word">
+        <span class="letter letter-n">
+          <span class="shape"><span class="fill"></span></span>
+          <span class="shape"><span class="fill"></span></span>
+          <span class="shape"><span class="fill"></span></span>
+        </span>
+        <span class="letter letter-e">
+          <span class="shape"><span class="fill"></span></span>
+          <span class="shape"><span class="fill"></span></span>
+          <span class="shape"><span class="fill"></span></span>
+          <span class="shape"><span class="fill"></span></span>
+        </span>
+        <span class="letter letter-t">
+          <span class="shape"><span class="fill"></span></span>
+          <span class="shape"><span class="fill"></span></span>
+        </span>
+        <span class="letter letter-f">
+          <span class="shape"><span class="fill"></span></span>
+          <span class="shape"><span class="fill"></span></span>
+          <span class="shape"><span class="fill"></span></span>
+        </span>
+        <span class="letter letter-l">
+          <span class="shape"><span class="fill"></span></span>
+          <span class="shape"><span class="fill"></span></span>
+        </span>
+        <span class="letter letter-i">
+          <span class="shape"><span class="fill"></span></span>
+        </span>
+        <span class="letter letter-x">
+          <span class="shape"><span class="fill"></span></span>
+          <span class="shape"><span class="fill"></span></span>
+        </span>
+        <div class="curve"></div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="control-button" id="replayButton" onclick="resetAnimation()">Replay</button>
+      <button class="control-button" id="playPauseButton" onclick="togglePlayPause()">Pause</button>
+      <button class="control-button active" id="fastSpeedButton" onclick="fastSpeed()">1x Speed</button>
+      <button class="control-button" id="slowSpeedButton" onclick="slowSpeed()">0.5x Speed</button>
+    </div>
+
+    <script src="style.js"></script>
+  </body>
+</html>

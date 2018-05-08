@@ -25,6 +25,14 @@ body {
   align-items: center;
 }
 
+a {
+  color: $red;
+
+  &:visited {
+    color: darken($red, 20%);
+  }
+}
+
 
 
 
@@ -540,6 +548,25 @@ body {
   width: 100%;
   height: 1rem;
   z-index: 100;
+}
+
+
+
+
+
+.footer {
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 18px;
+
+  > span:not(:last-of-type):after {
+    content: '|';
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 10px 0 14px;
+  }
 }
 
 

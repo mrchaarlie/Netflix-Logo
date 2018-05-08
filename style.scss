@@ -81,6 +81,10 @@ a {
   }
 }
 
+
+
+
+
 .animate-slow {
   .word {
     animation: zoom-out (1s * 2) ease-out forwards;
@@ -98,19 +102,19 @@ a {
   .letter-n {
     animation: slide-in-left (3.1s * 2) $ease-cubic forwards;
 
-    > span:nth-of-type(1) {
+    > .shape:nth-of-type(1) {
       .fill {
         animation-duration: $segment-time--slow * 2;
       }
     }
 
-    > span:nth-of-type(2) {
+    > .shape:nth-of-type(2) {
       .fill {
         animation-duration: $segment-time--slow;
       }
     }
 
-    > span:nth-of-type(3) {
+    > .shape:nth-of-type(3) {
       .fill {
         animation-duration: $segment-time--slow * 2;
       }
@@ -118,7 +122,7 @@ a {
   }
 
   .letter-e {
-    > span:nth-of-type(1) {
+    > .shape:nth-of-type(1) {
       animation: letter-e-bottom (1.25s * 2) $ease (1.75s * 2) forwards;
 
       .fill {
@@ -126,19 +130,19 @@ a {
       }
     }
 
-    > span:nth-of-type(2) {
+    > .shape:nth-of-type(2) {
       .fill {
         animation-delay: 1.85s * 2;
       }
     }
 
-    > span:nth-of-type(3) {
+    > .shape:nth-of-type(3) {
       .fill {
         animation-delay: 1.95s * 2;
       }
     }
 
-    > span:nth-of-type(4) {
+    > .shape:nth-of-type(4) {
       .fill {
         animation-delay: 2.05s * 2;
         animation-duration: ($segment-time--fast  * 2);
@@ -147,13 +151,13 @@ a {
   }
 
   .letter-t {
-    > span:nth-of-type(1) {
+    > .shape:nth-of-type(1) {
       .fill {
         animation-delay: 2.1s * 2;
       }
     }
 
-    > span:nth-of-type(2) {
+    > .shape:nth-of-type(2) {
       .fill {
         animation-delay: 2.2s * 2;
       }
@@ -161,19 +165,19 @@ a {
   }
 
   .letter-f {
-    > span:nth-of-type(1) {
+    > .shape:nth-of-type(1) {
       .fill {
         animation-delay: 2.25s * 2;
       }
     }
 
-    > span:nth-of-type(2) {
+    > .shape:nth-of-type(2) {
       .fill {
         animation-delay: 2.35s * 2;
       }
     }
 
-    > span:nth-of-type(3) {
+    > .shape:nth-of-type(3) {
       .fill {
         animation-delay: 2.45s * 2;
         animation-duration: ($segment-time--fast  * 2);
@@ -182,13 +186,13 @@ a {
   }
 
   .letter-l {
-    > span:nth-of-type(1) {
+    > .shape:nth-of-type(1) {
       .fill {
         animation-delay: 2.5s * 2;
       }
     }
 
-    > span:nth-of-type(2) {
+    > .shape:nth-of-type(2) {
       animation: letter-l-bottom (1.25s  * 2) $ease (1.75s  * 2) forwards;
 
       .fill {
@@ -199,7 +203,7 @@ a {
   }
 
   .letter-i {
-    > span:nth-of-type(1) {
+    > .shape:nth-of-type(1) {
       .fill {
         animation-delay: 2.7s * 2;;
       }
@@ -207,13 +211,13 @@ a {
   }
 
   .letter-x {
-    > span:nth-of-type(1) {
+    > .shape:nth-of-type(1) {
       .fill {
         animation-delay: 2.75s * 2;;
       }
     }
 
-    > span:nth-of-type(2) {
+    > .shape:nth-of-type(2) {
       .fill {
         animation-delay: 2.85s * 2;;
       }
@@ -232,6 +236,7 @@ a {
   justify-content: center;
   position: relative;
   animation: zoom-out 1s ease-out forwards;
+  will-change: transform;
   overflow: hidden;
   padding-bottom: 1px;
 }
@@ -261,6 +266,8 @@ a {
       width: 100%;
       box-shadow: 0 0 0.5rem rgba(0,0,0,0.5);
       transform: none;
+      will-change: height;
+      will-change: transform;
     }
   }
 }
@@ -270,7 +277,7 @@ a {
   margin-left: 5px;
   animation: slide-in-left 3.1s $ease-cubic forwards;
 
-  > span:nth-of-type(1) {
+  > .shape:nth-of-type(1) {
     width: 1rem;
     height: 100%;
     transform: rotate(180deg);
@@ -283,7 +290,7 @@ a {
     }
   }
 
-  > span:nth-of-type(2) {
+  > .shape:nth-of-type(2) {
     width: 1rem;
     height: 110%;
     transform-origin: 0 0;
@@ -297,7 +304,7 @@ a {
     }
   }
 
-  > span:nth-of-type(3) {
+  > .shape:nth-of-type(3) {
     width: 1rem;
     height: 100%;
     right: 0;
@@ -317,7 +324,7 @@ a {
   width: 3rem;
   margin-left: 0.725rem;
 
-  > span:nth-of-type(1) {
+  > .shape:nth-of-type(1) {
     width: 1.2rem;
     height: 46%;
     bottom: 0;
@@ -334,7 +341,7 @@ a {
     }
   }
 
-  > span:nth-of-type(2) {
+  > .shape:nth-of-type(2) {
     width: 1rem;
     height: 100%;
     transform: rotate(180deg);
@@ -345,7 +352,7 @@ a {
     }
   }
 
-  > span:nth-of-type(3) {
+  > .shape:nth-of-type(3) {
     width: 1.1rem;
     height: 43%;
     left: 0;
@@ -360,7 +367,7 @@ a {
     }
   }
 
-  > span:nth-of-type(4) {
+  > .shape:nth-of-type(4) {
     width: 1.1rem;
     height: 24%;
     left: 0;
@@ -382,7 +389,7 @@ a {
 .letter-t {
   width: 3.375rem;
 
-  > span:nth-of-type(1) {
+  > .shape:nth-of-type(1) {
     width: 1.1rem;
     height: 50%;
     transform-origin: 1.1rem 0;
@@ -394,7 +401,7 @@ a {
     }
   }
 
-  > span:nth-of-type(2) {
+  > .shape:nth-of-type(2) {
     width: 1rem;
     height: 100%;
     transform-origin: 0 0;
@@ -410,7 +417,7 @@ a {
 .letter-f {
   width: 3.05rem;
 
-  > span:nth-of-type(1) {
+  > .shape:nth-of-type(1) {
     width: 1.1rem;
     height: 44%;
     left: 0;
@@ -426,7 +433,7 @@ a {
     }
   }
 
-  > span:nth-of-type(2) {
+  > .shape:nth-of-type(2) {
     width: 1rem;
     height: 100%;
     z-index: 1;
@@ -438,7 +445,7 @@ a {
     }
   }
 
-  > span:nth-of-type(3) {
+  > .shape:nth-of-type(3) {
     width: 1.1rem;
     height: 35%;
     left: 0;
@@ -460,7 +467,7 @@ a {
 .letter-l {
   width: 3rem;
 
-  > span:nth-of-type(1) {
+  > .shape:nth-of-type(1) {
     width: 1.1rem;
     height: 100%;
 
@@ -471,7 +478,7 @@ a {
     }
   }
 
-  > span:nth-of-type(2) {
+  > .shape:nth-of-type(2) {
     width: 1.2rem;
     height: 44%;
     bottom: 0;
@@ -492,7 +499,7 @@ a {
   width: 1rem;
   margin-left: 0.55rem;
 
-  > span:nth-of-type(1) {
+  > .shape:nth-of-type(1) {
     width: 1rem;
     height: 100%;
     transform: rotate(180deg);
@@ -510,7 +517,7 @@ a {
   margin-left: 0.6rem;
   margin-right: 5px;
 
-  > span:nth-of-type(1) {
+  > .shape:nth-of-type(1) {
     width: 1.1rem;
     height: 115%;
     transform-origin: 100% 0;
@@ -525,7 +532,7 @@ a {
     }
   }
 
-  > span:nth-of-type(2) {
+  > .shape:nth-of-type(2) {
     width: 1.1rem;
     height: 115%;
     transform-origin: 0 0;
